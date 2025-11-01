@@ -1,0 +1,38 @@
+.map-container {
+    max-width: 1200px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.map-container .world-map {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    display: block;
+}
+
+/* Marcadores (pueden ser invisibles o visibles) */
+  .city {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 0, 0, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    border:  1px solid red;
+  }
+
+  /* Tooltip */
+  .tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    display: none;
+    pointer-events: none;
+    font-size: 14px;
+  }

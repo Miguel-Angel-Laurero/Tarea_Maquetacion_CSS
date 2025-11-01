@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/mapa.css">
 </head>
 <body>
   <div id="container">
@@ -35,19 +36,43 @@
 
     <div class="main-content">
       <main class="map-page">
-        <section class="map-container">
-          <img src="../img/mapaMundial.jpeg" alt="Mapa mundial de Las Tierras de Lantea" class="world-map">
+        <section class="map-container">  
+          <img src="../img/mapaMundial.png" alt="Mapa mundial de Las Tierras de Lantea" class="world-map">
+          <!-- Ejemplos de posiciones aproximadas (ajusta % según tu imagen) -->
+          <div class="city" style="top: 29%; left: 15.5%;" data-name="Chu'lak" data-info="Ciudad principal de los Señores del Sistema."></div>
+          <div class="city" style="top: 39%; left: 44%;" data-name="Goranak" data-info="Capital de Tau'ri."></div>
+          <div class="city" style="top: 50%; left: 50%;" data-name="Dakaara" data-info="Ciudad sagrada del pueblo Tau'ri."></div>
+          <div class="city" style="top: 40%; left: 75%;" data-name="Abydos" data-info="Antigua ciudad del Protectorado Rand."></div>
+          <div class="city" style="top: 70%; left: 80%;" data-name="Orilla" data-info="Puerto principal en Ida."></div>
+          <div class="city" style="top: 85%; left: 35%;" data-name="Revana" data-info="Capital de Tok'ra, región helada del sur."></div>
 
-          <!-- <div class="map-legend" aria-hidden="false">
-            <strong>Leyenda</strong>
-            <ul>
-              <li><span class="dot hero"></span> Héroes</li>
-              <li><span class="dot villain"></span> Villanos</li>
-              <li><span class="dot neutral"></span> Neutrales</li>
-            </ul>
-          </div> -->
-
+          <div id="tooltip" class="tooltip"></div>
         </section>
+
+        <div>
+          <img src="../img/ciudades/Chulak.png" id="city-img">
+        </div>
+          <script>
+            const tooltip = document.getElementById('tooltip');
+
+            document.querySelectorAll('.city').forEach(city => {
+              city.addEventListener('mouseenter', e => {
+                tooltip.style.display = 'block';
+                tooltip.innerText = city.dataset.name + ": " + city.dataset.info;
+              });
+              city.addEventListener('mousemove', e => {
+                tooltip.style.top = (e.pageY - 40) + 'px';
+                tooltip.style.left = (e.pageX + 10) + 'px';
+              });
+              city.addEventListener('mouseleave', e => {
+                tooltip.style.display = 'none';
+              });
+              city.addEventListener('click', e => {
+                let ciudad =document.getElementById("city-img");
+                ciudad.src = "../img/ciudades/"+ city.dataset.name +".png";
+              });
+            });
+        </script>
       </main>
 
       <footer>

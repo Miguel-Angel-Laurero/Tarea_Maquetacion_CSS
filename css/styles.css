@@ -433,41 +433,6 @@ footer {
     .glossary-controls { flex-direction: row; align-items: center; justify-content: space-between; }
 }
 
-/* Map page styles */
-.map-container {
-    max-width: 1200px;
-    margin: 20px auto 40px;
-    padding: 0 20px;
-    position: relative;
-}
-
-.map-container .world-map {
-    width: 100%;
-    scale: 2;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-    display: block;
-}
-
-/*.map-legend {
-    position: absolute;
-    right: 28px;
-    top: 28px;
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 10px 12px;
-    border-radius: 8px;
-    font-size: 0.9em;
-    backdrop-filter: blur(4px);
-}
-.map-legend ul { list-style: none; padding: 6px 0 0; margin: 0; }
-.map-legend li { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
-.map-legend .dot { width: 12px; height: 12px; border-radius: 50%; display:inline-block; }
-.map-legend .dot.hero { background: #38b2ac; }
-.map-legend .dot.villain { background: #ef4444; }
-.map-legend .dot.neutral { background: #f59e0b; }*/
-
 .socials {
     display: flex;
     gap: 15px;
