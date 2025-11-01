@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapa - Tierras de Lantea</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+        <button class="menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div id="logo">
+            <h1>Las Tierras de Lantea</h1>
+            <p>Mapa del mundo</p>
+        </div>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <a href="personajes.html"><i class="fas fa-users"></i> Personajes</a>
+        <a href="glosario.html"><i class="fas fa-book"></i> Glosario</a>
+        <a href="mapa.html"><i class="fas fa-map-marked-alt"></i> Mapa</a>
+        <a href="#"><i class="fas fa-info-circle"></i> Sobre Nosotros</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contacto</a>
+    </nav>
+
+    <div class="main-content">
+      <main class="map-page">
+        <section class="map-container">
+          <img src="../img/mapaMundial.jpeg" alt="Mapa mundial de Las Tierras de Lantea" class="world-map">
+
+          <div class="map-legend" aria-hidden="false">
+            <strong>Leyenda</strong>
+            <ul>
+              <li><span class="dot hero"></span> Héroes</li>
+              <li><span class="dot villain"></span> Villanos</li>
+              <li><span class="dot neutral"></span> Neutrales</li>
+            </ul>
+          </div>
+
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <strong>Las Tierras de Lantea</strong>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="copyright">
+            © 2025 Las Tierras de Lantea
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="js/cards.js"></script>
+</body>
+</html>
