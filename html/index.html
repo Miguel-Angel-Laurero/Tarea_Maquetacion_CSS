@@ -6,7 +6,7 @@
   <meta name="description" content="Plantilla de maquetación centrada en Flexbox — diseño responsivo y estética moderna" />
   <meta name="author" content="Equipo de diseño" />
   <meta name="theme-color" content="#0b6b63" />
-  <title>Tarea maquetación</title>
+  <title>Tierras de Lantea</title>
 
   <!-- Normalize (CDN) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="" crossorigin="anonymous" />
@@ -29,53 +29,65 @@
             <span></span>
         </button>
         <div id="logo">
-            <h1>Estudio Pixel</h1>
+            <h1>Las tierras de Lantea</h1>
             <p>Diseño y maquetación con Flexbox</p>
         </div>
     </header>
 
     <nav id="navigation">
-        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
-        <a href="personajes.html"><i class="fas fa-users"></i> Personajes</a>
+    <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+    <a href="personajes.html"><i class="fas fa-users"></i> Personajes</a>
+    <a href="glosario.html"><i class="fas fa-book"></i> Glosario</a>
+    <a href="mapa.html"><i class="fas fa-map-marked-alt"></i> Mapa</a>
         <a href="#"><i class="fas fa-info-circle"></i> Sobre Nosotros</a>
         <a href="#"><i class="fas fa-envelope"></i> Contacto</a>
     </nav>
     
     <div class="main-content">
-        <main class="portada">
-            <div class="hero-image">
-                <img src="../img/portada.png" alt="Imagen de portada">
-                <div class="hero-text">
-                    <h2>Bienvenidos a nuestra galería</h2>
-                    <p>Explora nuestra colección de personajes únicos</p>
-                </div>
-            </div>
-        </main>
-
-    <footer>
-      <div class="cabecera">
-        <div class="footer">
-          <strong>Estudio Pixel</strong>
-          <p>Diseño, UX y Front-end</p>
-        </div>
-
-        <div class="footer-links">
-          <nav aria-label="Enlaces de pie">
-            <a href="#">Aviso legal</a>
-            <a href="#">Privacidad</a>
-            <a href="#">Cookies</a>
-          </nav>
-        </div>
-
-        <div class="socials">
-          <a href="#" ><i class="fab fa-twitter"></i></a>
-          <a href="#" ><i class="fab fa-discord"></i></a>
-          <a href="#" ><i class="fab fa-instagram"></i></a>
-          <a href="#" ><i class="fab fa-linkedin"></i></a>
-        </div>
+    <main class="portada">
+      <div class="hero-image">
+        <!-- Stars background (pure CSS animation) -->
+        
+        <img src="../img/portada.png" alt="Imagen de portada">
       </div>
-      <div class="copyright">© 2025 Estudio Pixel — Plantilla Flexbox</div>
-    </footer>
+      <div class="stars" aria-hidden="true">
+
+        <!-- osa mayor -->
+        <span class="star" style="left:14%; top:18%; --size:5.8px; --delay:0.6s; --dur:2.8s;"></span>
+        <span class="star" style="left:17%; top:22%; --size:5.3px; --delay:0.5s; --dur:2.3s;"></span>
+        <span class="star" style="left:19%; top:27%; --size:4.6px; --delay:0.4s; --dur:2.5s;"></span>
+        <span class="star" style="left:22%; top:32%; --size:3.8px; --delay:0.4s; --dur:2.4s;"></span>
+        <span class="star" style="left:27%; top:35%; --size:3.8px; --delay:0.7s; --dur:2.6s;"></span>
+        <span class="star" style="left:21%; top:37%; --size:3.8px; --delay:0.6s; --dur:2.9s;"></span>
+        <span class="star" style="left:25%; top:39%; --size:3.8px; --delay:0.4s; --dur:2.2s;"></span>
+        <!-- osa menor -->
+
+  <!-- osa menor (Little Dipper) - zona inferior derecha -->
+  <span class="star" style="left:78%; top:78%; --size:3.2px; --delay:0.3s; --dur:2.6s;"></span>
+  <span class="star" style="left:81%; top:82%; --size:2.8px; --delay:0.6s; --dur:2.8s;"></span>
+  <span class="star" style="left:84%; top:80%; --size:2.4px; --delay:0.9s; --dur:2.2s;"></span>
+  <span class="star" style="left:86%; top:76%; --size:3.6px; --delay:1.1s; --dur:3.0s;"></span>
+  <span class="star" style="left:89%; top:82%; --size:2.2px; --delay:0.5s; --dur:2.1s;"></span>
+  <span class="star" style="left:92%; top:80%; --size:2.8px; --delay:0.8s; --dur:2.7s;"></span>
+  <span class="star" style="left:95%; top:76%; --size:4.0px; --delay:1.0s; --dur:3.4s;"></span>
+      </div>
+    </main>
+
+        <footer>
+          <div class="footer-content">
+            <div class="footer-logo">
+              <strong>Las Tierras de Lantea</strong>
+            </div>
+            <div class="socials">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+              © 2025 Las Tierras de Lantea
+            </div>
+          </div>
+        </footer>
   </div>
   <script src="js/cards.js"></script>
 </body>
