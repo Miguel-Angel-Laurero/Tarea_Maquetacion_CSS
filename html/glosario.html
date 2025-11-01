@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/glosario.css">
+  <script src="js/glosario.js" defer></script>
+  <script src="js/cards.js" defer></script>
 </head>
 <body>
   <div id="container">
@@ -20,7 +23,7 @@
         </button>
         <div id="logo">
             <h1>Las Tierras de Lantea</h1>
-            <p>Glosario de personajes</p>
+            
         </div>
     </header>
 
@@ -36,12 +39,13 @@
     <div class="main-content">
       <main class="glossary">
         <div class="glossary-controls">
+          <p>Glosario de personajes</p>
           <label for="search">Buscar personaje</label>
           <input id="search" class="search-bar" type="search" placeholder="Escribe el nombre..." aria-label="Buscar personaje">
 
           <div class="category-filter" role="tablist" aria-label="Filtrar por categoría">
             <button class="cat-btn active" data-cat="all">Todos</button>
-            <button class="cat-btn" data-cat="heroe">Héroes</button>
+            <button class="cat-btn" data-cat="aliado">Aliados</button>
             <button class="cat-btn" data-cat="villano">Villanos</button>
             <button class="cat-btn" data-cat="neutral">Neutrales</button>
           </div>
@@ -49,24 +53,60 @@
 
         <div class="glossary-grid" id="glossaryGrid">
           <!-- Aliados -->
-          <article class="card" data-name="Folken Herr" data-category="heroe">
+          <article class="card" data-name="Gran sacerdotisa" data-category="aliado">
             <div class="card-content">
-              <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/pnj/FolkenHerr.jpg" alt="Folken Herr">
-              <h4>Folken Herr</h4>
+              <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/aliados/Gran_sacerdotisa.png" alt="Gran sacerdotisa  ">
+              <h4>Gran sacerdotisa</h4>
             </div>
           </article>
-          <!-- Neutrales -->
-          <article class="card" data-name="Kalael" data-category="neutral">
+          <article class="card" data-name="Capitan" data-category="aliado">
               <div class="card-content">
-                  <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/pnj/Kalael.png" alt="Kalael">
-                  <h4>Kalael</h4>
+                <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/aliados/El_capitan.png" alt="El capitan">
+                <h4>El capitán</h4>
+              </div>
+            </article>
+            <article class="card" data-name="Yah" data-category="aliado">
+              <div class="card-content">
+                  <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/aliados/Yah.png" alt="Yah">
+                  <h4>Yah</h4>
+                </div>
+            </article>
+          <!-- Neutrales -->
+          <article class="card" data-name="Elise" data-category="neutral">
+              <div class="card-content">
+                  <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/neutrales/Elise.png" alt="Elise">
+                  <h4>Elise</h4>
+                </div>
+            </article>
+            <article class="card" data-name="Elise" data-category="neutral">
+              <div class="card-content">
+                  <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/neutrales/" alt="">
+                  <h4></h4>
+                </div>
+            </article>
+            <article class="card" data-name="Elise" data-category="neutral">
+              <div class="card-content">
+                  <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/neutrales/" alt="">
+                  <h4></h4>
                 </div>
             </article>
             <!-- Villanos -->
             <article class="card" data-name="Apophis" data-category="villano">
               <div class="card-content">
-                <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/pnj/Godrick.png" alt="Godrick">
-                <h4>Godrick</h4>
+                <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/villanos/Apophis.jpg" alt="Apophis">
+                <h4>Apophis</h4>
+              </div>
+            </article>
+            <article class="card" data-name="Bailarines_Mecanicos" data-category="villano">
+              <div class="card-content">
+                <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/villanos/Bailarines_Mecanicos.png" alt="Bailarines Mecanicos">
+                <h4>Bailarines Mecánicos</h4>
+              </div>
+            </article>
+            <article class="card" data-name="Soldado_Elfo" data-category="villano">
+              <div class="card-content">
+                <img class="card-img" src="../img/pnj/incognita.png" data-src="../img/glosario/villanos/Soldado_Elfo.png" alt="Soldado Elfo">
+                <h4>Soldado Elfo</h4>
               </div>
             </article>
             
@@ -94,7 +134,6 @@
     </div>
   </div>
 
-  <script src="js/glosario.js"></script>
-  <script src="js/cards.js"></script>
+
 </body>
 </html>
