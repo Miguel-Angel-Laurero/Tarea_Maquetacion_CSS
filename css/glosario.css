@@ -1,10 +1,6 @@
 
 @media (min-width: 900px){
-    .glossary-controls {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+    .glossary-controls { flex-direction: row; align-items: center; justify-content: space-between; }
 }
 /* Contenedor principal del glosario */
 .glossary-box {
@@ -27,7 +23,6 @@
      background: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
 }
-
 
 .search-bar {
     width: 100%;
@@ -144,4 +139,140 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+/* =========================
+   📱 ADAPTACIÓN A MÓVILES - GLOSARIO
+   ========================= */
+
+/* ----- Tablets (hasta 1024px) ----- */
+@media (max-width: 1024px) {
+  .glossary-box {
+    max-width: 95%;
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .glossary-grid {
+    width: 100%;
+    padding: 30px 10px;
+    gap: 15px;
+  }
+
+  .glossary-controls {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .category-filter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .glossary-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .glossary-header p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ----- Móviles grandes (hasta 768px) ----- */
+@media (max-width: 768px) {
+  .glossary-box {
+    padding: 8px;
+    margin: 15px auto;
+  }
+
+  .glossary-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .glossary-header p {
+    font-size: 0.9rem;
+  }
+
+  .glossary-controls {
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: none;
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .category-filter {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .cat-btn {
+    padding: 5px 8px;
+    font-size: 0.85rem;
+  }
+
+  .glossary-grid {
+    width: 100%;
+    padding: 25px 10px;
+    gap: 12px;
+  }
+
+  .glossary-grid .card {
+    width: 140px;
+    min-height: 160px;
+  }
+}
+
+/* ----- Móviles pequeños (hasta 480px) ----- */
+@media (max-width: 480px) {
+  .glossary-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .glossary-header p {
+    font-size: 0.85rem;
+  }
+
+  .glossary-controls {
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .search-bar {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 6px 8px;
+  }
+
+  .category-filter {
+    gap: 5px;
+  }
+
+  .cat-btn {
+    font-size: 0.8rem;
+    padding: 4px 6px;
+  }
+
+  .glossary-grid {
+    padding: 20px 5px;
+    gap: 10px;
+  }
+
+  .glossary-grid .card {
+    width: 120px;
+    min-height: 150px;
+  }
 }

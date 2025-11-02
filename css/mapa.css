@@ -24,22 +24,7 @@
     transform: translate(-50%, -50%);
     border:  2px solid black;
   }
-  /*.city-overlay{
-    position: absolute;
-    width: 900px;
-    justify-content: center;
-    background: rgba(0,0,0,0.5);
-    
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    z-index: 10;
-    display: center;
-  
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-  }*/
+
  
   /* Tooltip */
   .tooltip {
@@ -104,4 +89,134 @@
 .city-overlay.show .city-popup {
   transform: scale(1);
 }
+/* =========================
+   📱 ADAPTACIÓN A MÓVILES - MAPA INTERACTIVO
+   ========================= */
+
+/* 🔹 Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+  .map-container {
+    max-width: 95%;
+    padding: 0 10px;
+    margin: 10px auto 30px;
+  }
+
+  .city {
+    width: 45px;
+    height: 45px;
+  }
+
+  .tooltip {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+
+  .city-popup {
+    width: 700px;
+    height: 380px;
+  }
+
+  .city-popup img {
+    width: 55%;
+  }
+
+  .city-info {
+    width: 45%;
+    padding: 15px;
+  }
+
+  .city-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .city-info p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 🔹 Móviles grandes (hasta 768px) */
+@media (max-width: 768px) {
+  .map-container {
+    padding: 0;
+  }
+
+  .city {
+    width: 35px;
+    height: 35px;
+    border-width: 1.5px;
+  }
+
+  .tooltip {
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+
+  /* Pop-up adaptado en vertical */
+  .city-popup {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    max-height: 85vh;
+  }
+
+  .city-popup img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .city-info {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .city-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .city-info p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔹 Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .map-container {
+    margin: 5px auto 20px;
+  }
+
+  .city {
+    width: 28px;
+    height: 28px;
+    border-width: 1px;
+  }
+
+  .tooltip {
+    font-size: 11px;
+  }
+
+  .city-popup {
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  .city-popup img {
+    height: 180px;
+  }
+
+  .city-info {
+    padding: 12px;
+  }
+
+  .city-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .city-info p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
+
 

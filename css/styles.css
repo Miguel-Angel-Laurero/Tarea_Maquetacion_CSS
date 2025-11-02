@@ -10,7 +10,12 @@
 html, body {
     height: 100%;
 }
-
+@media (max-width: 1024px) {
+  #container {
+    min-width: 100%;
+    padding: 0 10px;
+  }
+}
 #container{
     min-width: 1000px;
     max-width: 2000px;
@@ -302,3 +307,194 @@ footer {
     opacity: 0.8;
     font-size: 0.9em;
 }
+@media (max-width: 768px) {
+  #container header {
+    height: 70px;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 480px) {
+  #logo h1 {
+    font-size: 1.1em;
+  }
+
+  #logo p {
+    display: none; /* Oculta subtítulo para ahorrar espacio */
+  }
+
+  .menu-toggle {
+    width: 22px;
+    height: 18px;
+  }
+
+  .main-content {
+    padding-top: 65px;
+  }
+
+  #navigation {
+    width: 200px;
+  }
+
+  #navigation a {
+    font-size: 0.85em;
+    padding: 10px 18px;
+  }
+
+  main {
+    gap: 15px;
+  }
+
+  .portada {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.85em;
+  }
+
+  .socials a {
+    font-size: 1.3em;
+  }
+
+  .copyright {
+    font-size: 0.75em;
+  }
+}
+
+/* =========================
+   📱 ADAPTACIÓN A MÓVILES
+   ========================= */
+
+@media (max-width: 1024px) {
+  #container {
+    min-width: 100%;
+    padding: 0 10px;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
+
+/* ----- Tablets y pantallas medianas ----- */
+@media (max-width: 768px) {
+  #container header {
+    height: 70px;
+    padding: 10px 15px;
+  }
+
+  #logo h1 {
+    font-size: 1.4em;
+  }
+
+  #logo p {
+    font-size: 0.8em;
+  }
+
+  .menu-toggle {
+    left: 15px;
+    width: 25px;
+    height: 20px;
+  }
+
+  /* Menú lateral adaptado */
+  #navigation {
+    width: 220px;
+    padding-top: 80px;
+  }
+
+  #navigation a {
+    font-size: 0.95em;
+    padding: 12px 20px;
+  }
+
+  main {
+    padding-top: 70px;
+  }
+
+  .portada {
+    height: auto;
+    padding: 20px;
+  }
+
+  .portada img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
+
+/* ----- Móviles pequeños (<= 480px) ----- */
+@media (max-width: 480px) {
+  #logo h1 {
+    font-size: 1.1em;
+  }
+
+  #logo p {
+    display: none; /* Oculta subtítulo para ahorrar espacio */
+  }
+
+  .menu-toggle {
+    width: 22px;
+    height: 18px;
+  }
+
+  .main-content {
+    padding-top: 65px;
+  }
+
+  #navigation {
+    width: 200px;
+  }
+
+  #navigation a {
+    font-size: 0.85em;
+    padding: 10px 18px;
+  }
+
+  main {
+    gap: 15px;
+  }
+
+  .portada {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.85em;
+  }
+
+  .socials a {
+    font-size: 1.3em;
+  }
+
+  .copyright {
+    font-size: 0.75em;
+  }
+}
+
+/* ----- Correcciones de fondo estrellado ----- */
+@media (max-width: 768px) {
+  .star,
+  .constellation-lines {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+}
+
