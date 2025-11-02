@@ -1,0 +1,107 @@
+.map-container {
+    max-width: 1200px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.map-container .world-map {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    display: block;
+}
+
+/* Marcadores*/
+  .city {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    border:  2px solid black;
+  }
+  /*.city-overlay{
+    position: absolute;
+    width: 900px;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    z-index: 10;
+    display: center;
+  
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+  }*/
+ 
+  /* Tooltip */
+  .tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    display: none;
+    pointer-events: none;
+    font-size: 14px;
+  }
+.city-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.city-popup {
+  display: flex;
+  background: #1a1a1a;
+  color: #f0f0f0;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.15);
+  overflow: hidden;
+  width: 900px;
+  height: 450px;
+  transition: transform 0.3s ease;
+}
+
+.city-popup img {
+  width: 60%;
+  object-fit: cover;
+}
+
+.city-info {
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.city-info h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.city-info p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Animación suave al abrir */
+.city-overlay.show .city-popup {
+  transform: scale(1);
+}
+
