@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (img && img.dataset.alt) {
                 img.style.opacity = '0';
                 setTimeout(() => {
-                    //img.src = img.dataset.alt.replace('peppo.jpg', 'incognita.jpg');
                     img.style.opacity = '1';
                 }, 175);
             }
