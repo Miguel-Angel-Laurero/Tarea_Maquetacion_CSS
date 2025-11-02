@@ -12,8 +12,9 @@
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/mapa.css">
   <!-- Scripts -->
-    <script src="../js/cards.js" defer></script>
     <script src="../js/menu.js" defer></script>
+    <script src="../js/mapa.js" defer></script>
+</head>
 </head>
 <body>
   <div id="container">
@@ -161,30 +162,16 @@
           <div id="tooltip" class="tooltip"></div>
         </section>
 
-        <div class="city-info">
-          <img src="" id="city-img">
+        <!-- Overlay para mostrar imagen e información de ciudad -->
+        <div id="city-overlay" class="city-overlay" style="display:none;">
+          <div class="city-popup">
+            <img src="" id="city-img" alt="Ciudad">
+            <div class="city-info">
+              <h2 id="city-title"></h2>
+              <p id="city-description"></p>
+            </div>
+          </div>
         </div>
-          <script>
-            const tooltip = document.getElementById('tooltip');
-
-            document.querySelectorAll('.city').forEach(city => {
-              city.addEventListener('mouseenter', e => {
-                tooltip.style.display = 'block';
-                tooltip.innerText = city.dataset.name + ": " + city.dataset.info;
-              });
-              city.addEventListener('mousemove', e => {
-                tooltip.style.top = (e.pageY - 40) + 'px';
-                tooltip.style.left = (e.pageX + 10) + 'px';
-              });
-              city.addEventListener('mouseleave', e => {
-                tooltip.style.display = 'none';
-              });
-              city.addEventListener('click', e => {
-                let ciudad =document.getElementById("city-img");
-                ciudad.src = "../img/ciudades/"+ city.dataset.name +".png";
-              });
-            });
-        </script>
       </main>
 
       <footer>
