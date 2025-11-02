@@ -163,10 +163,10 @@ main{
     max-width: 1200px;
     margin: 0 auto;
 }
-main::after{
+/* main::after{
     content: "";
     flex: auto;
-}
+} */
 
 /* Estilos de la Portada */
 .portada{
@@ -269,7 +269,6 @@ footer {
 .socials {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
 }
 
 .socials a {
@@ -309,9 +308,6 @@ footer {
 /* Copyright */
 .copyright {
     text-align: center;
-    padding-top: 30px;
-    margin-top: 30px;
-    border-top: 1px solid rgba(255,255,255,0.1);
     opacity: 0.8;
     font-size: 0.9em;
 }
