@@ -13,28 +13,32 @@
     display: block;
 }
 
-/* Marcadores (pueden ser invisibles o visibles) */
+/* Marcadores*/
   .city {
     position: absolute;
-    width: 35px;
-    height: 35px;
-    background: rgba(255, 0, 0, 0.7);
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     cursor: pointer;
     transform: translate(-50%, -50%);
-    border:  1px solid red;
+    border:  2px solid black;
   }
-  .city-img{
-    z-index: 5;
+  .city-info{
+    position: absolute;
+    width: 200px;
+    top: 10%;
+    left: 5%;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    z-index: 10;
     display: flex;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.35);
-    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-  .city-img img{
-    border-radius: 10px;
-  }
-
   /* Tooltip */
   .tooltip {
     position: absolute;
