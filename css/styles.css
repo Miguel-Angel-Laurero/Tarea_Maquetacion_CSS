@@ -27,20 +27,20 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    /*background-color:transparent;*/
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.3);*/
     z-index: 1000;
 }
 
 #logo {
     text-align: center;
-    color: #ffd166;
-    text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
+    color: #ffdb87;
+    text-shadow: 0 0px 6px rgba(231, 187, 83, 0.911);
     font-size: 18px;
 }
 
@@ -56,14 +56,14 @@ html, body {
 /* Menu de navegación */
 #navigation{
     position: fixed;
-    top: 80px; /* Alineado con el borde inferior del header */
+    top: 0px; /* Alineado con el borde inferior del header */
     left: -250px;
     width: 250px;
-    height: calc(100vh - 80px);
-    background-color: #333;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
     z-index: 999; /* Justo debajo del header */
-    padding-top: 20px;
+    padding-top: 100px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     overflow-y: auto; /* Permite scroll si el menú es muy largo */
 }
