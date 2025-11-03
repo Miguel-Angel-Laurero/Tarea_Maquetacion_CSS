@@ -304,26 +304,6 @@ footer {
     transform: translateY(-2px);
 }
 
-.copyright {
-    font-size: 0.9em;
-    opacity: 0.7;
-}
-
-.socials {
-    display: flex;
-    gap: 15px;
-}
-
-.socials a {
-    color: white;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
-}
-
-.socials a:hover {
-    color: #4a9eff;
-}
-
 /* Efectos de brillo por red social */
 .socials a[aria-label="Twitter"]:hover {
   color: #1da1f2;
