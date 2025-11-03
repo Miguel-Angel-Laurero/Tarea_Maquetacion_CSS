@@ -390,6 +390,16 @@ footer {
     padding: 12px 20px;
   }
 
+  .ruta {
+    width: 120px;
+    height: 120px;
+    font-size: 1em;
+  }
+  .ruta[aria-label="pnj"] { top: 10%; left: 5%; }
+  .ruta[aria-label="mapa"] { top: 60%; left: 60%; }
+  .ruta[aria-label="glosario"] { top: 70%; left: 10%; }
+  .ruta[aria-label="inicio"] { top: 25%; left: 75%; }
+
   main {
     padding-top: 70px;
   }
@@ -464,6 +474,13 @@ footer {
   .constellation-lines {
     opacity: 0.4;
     transform: scale(0.8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }
 
